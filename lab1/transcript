@@ -1,0 +1,33 @@
+# Compile of tb_mux.sv was successful.
+# Compile of mux.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_mux
+# vsim -gui work.tb_mux 
+# Start time: 11:11:12 on Aug 11,2026
+# Loading sv_std.std
+# Loading work.tb_mux
+# Loading work.mux
+add wave -position insertpoint sim:/tb_mux/*
+add wave -position end  sim:/tb_mux/dut/f
+add wave -position end  sim:/tb_mux/dut/a
+add wave -position end  sim:/tb_mux/dut/b
+add wave -position end  sim:/tb_mux/dut/sel
+add wave -position end  sim:/tb_mux/dut/f1
+add wave -position end  sim:/tb_mux/dut/n_sel
+add wave -position end  sim:/tb_mux/dut/f2
+run -all
+#                    0a = 0 | b = 0 | sel = 0 | muxOut = 0
+#                   10a = 0 | b = 0 | sel = 1 | muxOut = 0
+#                   20a = 0 | b = 1 | sel = 0 | muxOut = 0
+#                   30a = 0 | b = 1 | sel = 1 | muxOut = 1
+#                   40a = 1 | b = 0 | sel = 0 | muxOut = 1
+#                   50a = 1 | b = 0 | sel = 1 | muxOut = 0
+#                   60a = 1 | b = 1 | sel = 0 | muxOut = 1
+#                   70a = 1 | b = 1 | sel = 1 | muxOut = 1
+# ** Note: $stop    : D:/Users/ktmc/Downloads/tb_mux.sv(12)
+#    Time: 80 ns  Iteration: 0  Instance: /tb_mux
+# Break in Module tb_mux at D:/Users/ktmc/Downloads/tb_mux.sv line 12
+# Error opening D:/Users/ktmc/Downloads/lab1/verilog_src/std/std.sv
+# Path name 'D:/Users/ktmc/Downloads/lab1/verilog_src/std/std.sv' doesn't exist.
+# End time: 11:49:33 on Aug 11,2026, Elapsed time: 0:38:21
+# Errors: 0, Warnings: 5

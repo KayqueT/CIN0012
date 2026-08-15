@@ -1,0 +1,15 @@
+D:/Users/ktmc/Downloads/tb_mux.sv {1 {vlog -work work -sv -stats=none D:/Users/ktmc/Downloads/tb_mux.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_mux
+
+Top level modules:
+	tb_mux
+
+} {} {}} D:/Users/ktmc/Downloads/mux.sv {1 {vlog -work work -sv -stats=none D:/Users/ktmc/Downloads/mux.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}}
